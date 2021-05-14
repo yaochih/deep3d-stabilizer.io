@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="cache-control" content="no-cache">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deep3D Stabilizer</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Roboto:500" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="#">
+                                <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Deep3D Stabilizer</title>
+                                    <defs>
+                                        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="logo-gradient-b">
+                                            <stop stop-color="#39D8C8" offset="0%"/>
+                                            <stop stop-color="#BCE4F4" offset="47.211%"/>
+                                            <stop stop-color="#838DEA" offset="100%"/>
+                                        </linearGradient>
+                                        <path d="M32 16H16v16H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h28a2 2 0 0 1 2 2v14z" id="logo-gradient-a"/>
+                                        <linearGradient x1="23.065%" y1="25.446%" y2="100%" id="logo-gradient-c">
+                                            <stop stop-color="#1274ED" stop-opacity="0" offset="0%"/>
+                                            <stop stop-color="#1274ED" offset="100%"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <mask id="logo-gradient-d" fill="#fff">
+                                            <use xlink:href="#logo-gradient-a"/>
+                                        </mask>
+                                        <use fill="url(#logo-gradient-b)" xlink:href="#logo-gradient-a"/>
+                                        <path fill="url(#logo-gradient-c)" mask="url(#logo-gradient-d)" d="M-16-16h32v32h-32z"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero text-center">
+                <div class="container-sm">
+                    <div class="hero-inner">
+                        <h1 class="hero-title h2-mobile mt-0 is-revealing">3D Video Stabilization with Depth Estimation by CNN-based Optimization</h1>
+                        <span class="hero-paragraph is-revealing"><a href="https://yaochih.github.io/">Yao-Chih Lee</a></span>
+                        <span class="hero-paragraph is-revealing"><a href="https://kuan-wei-tseng.github.io/">Kuan-Wei Tseng</a></span>
+                        <span class="hero-paragraph is-revealing">Yu-Ta Chen</span>
+                        <span class="hero-paragraph is-revealing">Chien-Cheng Chen</span><br/>
+                        <span class="hero-paragraph is-revealing"><a href="https://imp.iis.sinica.edu.tw/">Chu-Song Chen</a></span>
+                        <span class="hero-paragraph is-revealing"><a href="http://www.ntuimlab.tw/">Yi-Ping Hung</a></span>
+                        <br/>
+                        <span class="hero-paragraph is-revealing">Academia Sinica, Taiwan</span><br/>
+                        <span class="hero-paragraph is-revealing">National Taiwan University</span>
+                        <br/>
+                        <h3 class='hero-title h2-mobile mt-2 is-revealing'>CVPR 2021</h3>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="features section text-center newsletter">
+                <div class="container">
+                    <img src="img/pipeline.png">
+                    <div class="features-inner section-inner has-bottom-divider">
+                        <h2 class="section-title mt-0">Abstract</h2>
+                        <p class="section-paragraph">We propose Deep3D Stabilizer, a novel 3D depth-based learning method for video stabilization. Our approach requires no data for pre-training but stabilizes the input video via 3D reconstruction directly. The rectification stage incorporates the 3D scene depth and camera motion to smooth the camera trajectory and synthesize the stabilized video. Unlike most one-size-fits-all learning-based methods, our smoothing algorithm allows users to manipulate the stability of a video efficiently.</p>
+                        
+                    </div>
+                    <div class='iframe-container'>
+                        <iframe class='responsive-iframe'
+                            src="https://www.youtube.com/embed/pMluFVA7NDQ">
+                        </iframe>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="features section text-center">
+                <div class="container">
+                    
+                    <div class="features-inner section-inner has-bottom-divider">
+                        <div class="features-wrap">
+                            <div class="feature is-revealing">
+                                <a href="files/lee-cvpr2021-deep3d-stabilizer.pdf"><img src='icon/pdf-icon.png' class='feature-icon'></a>
+                                <p><a href="files/lee-cvpr2021-deep3d-stabilizer.pdf">Paper</a><p>
+                            </div>
+                            <div class="feature is-revealing">
+                                <a href="files/lee-cvpr2021-deep3d-stabilizer-supplementary.pdf"><img src='icon/pdf-icon.png' class='feature-icon'></a>
+                                <p><a href="files/lee-cvpr2021-deep3d-stabilizer-supplementary.pdf">Supplementary</a><p>
+                            </div>
+                            <div class="feature is-revealing">
+                                <img src='icon/github-icon.png' class='feature-icon'>
+                                <p>Code<br/>(comming soon)<p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="features section text-left newsletter">
+                <div class="container">
+                    <div class="features-inner section-inner has-bottom-divider">
+                        <h2 class="section-title mt-0 text-center">Citation</h2>
+                        <pre><code>
+<p>@inproceedings{lee2021deep3d</span>
+    <span>title={3D Video Stabilization with Depth Estimation by CNN-based Optimization},</span>
+    <span>author={Lee, Yao-Chih and Tseng, Kuan-Wei and Chen, Yu-Ta and Chen, Chien-Cheng and Chen, Chu-Song and Hung, Yi-Ping},</span>
+    <span>year={2021},</span>
+    <span>booktitle=IEEE/CVF Conference on Computer Vision and Pattern Recognition</span>
+<span>}</span>
+                        </code></pre>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="site-footer-inner">
+                    <div class="brand footer-brand">
+                        <a href="#">
+                            <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <title>Deep3D Stabilizer</title>
+                                <defs>
+                                    <path d="M32 16H16v16H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h28a2 2 0 0 1 2 2v14z" id="logo-gradient-footer-a"/>
+                                    <linearGradient x1="50%" y1="50%" y2="100%" id="logo-gradient-footer-b">
+                                        <stop stop-color="#FFF" stop-opacity="0" offset="0%"/>
+                                        <stop stop-color="#FFF" offset="100%"/>
+                                    </linearGradient>
+                                </defs>
+                                <g fill="none" fill-rule="evenodd">
+                                    <mask id="logo-gradient-footer-c" fill="#fff">
+                                        <use xlink:href="#logo-gradient-footer-a"/>
+                                    </mask>
+                                    <use fill-opacity=".32" fill="#FFF" xlink:href="#logo-gradient-footer-a"/>
+                                    <path fill="url(#logo-gradient-footer-b)" mask="url(#logo-gradient-footer-c)" d="M-16-16h32v32h-32z"/>
+                                </g>
+                            </svg>
+
+                        </a>
+                    </div>
+                    
+                    <div class="footer-copyright">&copy; 2018 Ava, all rights reserved</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="dist/js/main.min.js"></script>
+</body>
+</html>
